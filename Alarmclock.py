@@ -4,6 +4,12 @@
    When the alarm goes off, a random youtube video will be opened.
    The possible youtube video URLs are taken from "youtube_alarm_videos.txt"
 """
+import datetime
+import os
+import time
+import random
+import webbrowser
+
 
 # If video URL file does not exist, create one
 if not os.path.isfile("youtube_alarm_videos.txt"):
